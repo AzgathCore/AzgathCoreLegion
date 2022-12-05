@@ -109,10 +109,10 @@ LogsDir = "../logs"
 #    Don't open port on firewall to external connections (it belongs to mysql, not to wow server).
 #    The username you choose must have permisions to create/alter/rename tables.
 
-LoginDatabaseInfo     = "127.0.0.1;3309;root;root;azl_auth"
-WorldDatabaseInfo     = "127.0.0.1;3309;root;root;azl_world"
-CharacterDatabaseInfo = "127.0.0.1;3309;root;root;azl_chars"
-HotfixDatabaseInfo    = "127.0.0.1;3309;root;root;azl_hotfixes"
+LoginDatabaseInfo     = "127.0.0.1;3306;root;root;azl_auth"
+WorldDatabaseInfo     = "127.0.0.1;3306;root;root;azl_world"
+CharacterDatabaseInfo = "127.0.0.1;3306;root;root;azl_chars"
+HotfixDatabaseInfo    = "127.0.0.1;3306;root;root;azl_hotfixes"
 
 #
 #    LoginDatabase.WorkerThreads

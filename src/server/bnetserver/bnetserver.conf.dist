@@ -222,7 +222,7 @@ IPLocationFile = ""
 #                                                                           Unix/Linux)
 #        Default:     "127.0.0.1;3306;azgath;azgath;auth"
 
-LoginDatabaseInfo = "127.0.0.1;3309;root;root;azl_auth"
+LoginDatabaseInfo = "127.0.0.1;3306;root;root;azl_auth"
 
 #
 #    LoginDatabase.WorkerThreads
