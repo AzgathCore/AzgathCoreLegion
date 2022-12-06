@@ -2645,11 +2645,11 @@ void Player::GiveLevel(uint8 level)
     SetCreateHealth(0);
     SetCreateMana(basemana);
 
-    InitTalentForLevel();
+    InitTalentForLevel(); // Spells are added to action bar in here when leveling up (and more)
     InitTaxiNodesForLevel();
 
-    if (level < PLAYER_LEVEL_MIN_HONOR)
-        ResetPvpTalents();
+    //if (level < PLAYER_LEVEL_MIN_HONOR)
+        //ResetPvpTalents();
 
     UpdateAllStats();
 
@@ -2706,8 +2706,8 @@ void Player::InitTalentForLevel()
 {
     uint8 level = getLevel();
     // talents base at level diff (talents = level - 9 but some can be used already)
-    if (level < MIN_SPECIALIZATION_LEVEL)
-        ResetTalentSpecialization();
+    //if (level < MIN_SPECIALIZATION_LEVEL)
+        //ResetTalentSpecialization(); //spells getting added double/tripple to action bar cuz of this
 
     uint32 talentTiers = CalculateTalentsTiers();
     if (level < 15)
